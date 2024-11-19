@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Welcome, <%= userData.name %>!</h1>
+        <img src="<%= userData.profilePic %>" alt="Profile Picture" id="avatar" style="width: 150px; height: 150px; border-radius: 50%;">
+
+        <p><strong>Email:</strong> <%= userData.email %></p>
+        <p><strong>Phone:</strong> <%= userData.phone %></p>
+        <p><strong>Educational Qualification:</strong> <%= userData.qualification %></p>
+        <p><strong>City:</strong> <%= userData.city %></p>
+        <!-- Logout Button -->
+        <form action="/logout" method="GET">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+    
+</body>
+</html>
