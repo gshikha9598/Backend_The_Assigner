@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Your Appointment</h1>
+        <form id="appointmentForm" action="/submit-appointment" method="POST">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="button" id="verifyEmail">Verify Email</button>
+            <!-- Email OTP -->
+            <label for="emailOtp">Email OTP:</label>
+            <input type="text" id="emailOtp" name="emailOtp" pattern="\d*" disabled required>
+
+            <!-- Phone -->
+            <label for="phoneno">Phone Number:</label>
+            <input type="tel" id="phoneno" name="phone" pattern="\d{10}" required>
+            <button type="button" id="sendOtp">Send OTP</button>
+            <!-- Phone OTP -->
+            <label for="phoneOtp">Phone OTP:</label>
+            <input type="text" id="phoneOtp" name="phoneOtp" pattern="\d*" disabled required>
+
+            <!-- Address -->
+            <label for="contactDetails">Address Details:</label>
+            <textarea id="contactDetails" name="contactDetails" required></textarea>
+
+            <!-- Course -->
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select a course</option>
+                <option value="Course 1">Course 1</option>
+                <option value="Course 2">Course 2</option>
+                <option value="Course 3">Course 3</option>
+                <option value="Course 4">Course 4</option>
+                <option value="Course 5">Course 5</option>
+                <option value="Course 6">Course 6</option>
+                <option value="Course 7">Course 7</option>
+                <option value="Course 8">Course 8</option>
+                <option value="Course 9">Course 9</option>
+                <option value="Course 10">Course 10</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

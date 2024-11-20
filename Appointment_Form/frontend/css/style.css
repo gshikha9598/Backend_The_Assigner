@@ -1,0 +1,69 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;    /* Center content vertically */
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column; /* Align children in a column */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Center column width */
+    box-sizing: border-box;
+}
+
+button {
+    color: #ffffff; /* Ensures text is clearly visible */
+    background-color: #007bff; /* A lighter, accessible blue */
+    border: none; /* Removes default border for a clean look */
+    border-radius: 8px; /* Smooth rounded corners */
+    padding: 10px 20px; /* Adds consistent spacing around text */
+    font-size: 16px; /* Improves readability */
+    cursor: pointer; /* Indicates interactivity */
+    text-transform: uppercase; /* Makes text bold and consistent */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    width: 100%; /* Ensures button fits form width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darkens on hover for feedback */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Emphasizes hover state */
+}
+
+button:active {
+    background-color: #003f7f; /* Darker shade when clicked */
+    transform: scale(0.98); /* Slight "press" effect */
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* Space between heading and form */
+    font-size: 24px;
+}
+
+/* Form Container */
+form {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    height: 80vh;
+    display: flex;
+    flex-direction: column; /* Arrange form elements vertically */
+    justify-content: space-between;
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+}
